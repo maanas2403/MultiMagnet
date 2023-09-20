@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MULTIMAGNET</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('bg.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        .container {
+            display: flex;
+            flex-direction: row; /* Column layout for both PC and mobile */
+            align-items: center; /* Center align the images and title horizontally */
+            justify-content: center;
+            padding-top: 150px; 
+        }
+
+        .image {
+            flex: 0 0 33%; /* Three images in a row on PC */
+            max-width: 30%;
+            
+            padding: 20px;
+            position: relative;
+        }
+
+        .image img {
+            max-width: 100%;
+            height: auto;
+            border: 2px solid white; /* Add border to the images */
+            border-radius: 20px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .image:hover img {
+            z-index: 10;
+            transform: scale(1.1); /* Scale the image on hover */
+        }
+        .image .text-overlay {
+            position: absolute;
+            top: 75%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 40px;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        .image:hover .text-overlay {
+            display: block; /* Show the text overlay on hover */
+            position: absolute;
+            top: 75%;
+            left: 50%;
+        }
+
+        .title-container {
+            background-color: black;
+            opacity: 0.85;
+            padding: 5px;
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            right: 5px;
+        }
+
+        .title {
+            color: white;
+            font-size: 50px;
+            text-align: center;
+        }
+        .about-link-1 {
+            text-align: center;
+            margin-top: 20px; /* Add space between the image and "About" link */
+            margin-bottom: 10px;
+            background-color: #ff3131;
+            padding: 5px 10px;
+            border: 1px solid white;
+        }
+        .about-link-1 a{
+            color: white !important;
+            
+        }
+        .about-link-2 {
+            text-align: center;
+            margin-top: 20px; /* Add space between the image and "About" link */
+            margin-bottom: 10px;
+            background-color: #5271ff;
+            padding: 5px 10px;
+            border: 1px solid white;
+             /* Add space between the image and "About" link */
+        }
+        .about-link-2 a{
+            color: white !important;
+            
+        }
+        .about-link-3 {
+            text-align: center;
+            margin-top: 20px; /* Add space between the image and "About" link */
+            margin-bottom: 10px;
+            background-color: #ffde59;
+            padding: 5px 10px;
+            border: 1px solid white;
+            /* Add space between the image and "About" link */
+        }
+        .about-link-3 a{
+            color: white !important;
+            
+        }
+        @media (max-width: 768px) {
+            /* Mobile layout - Up to down */
+            .title{
+                font-size: 25px;
+            text-align: center;
+            }
+            .container {
+                flex-direction: column;
+    
+            }
+
+            .image {
+                flex: 0 0 100%;
+                max-width: 50%;
+                padding: 5px;
+                margin-bottom: 2px; /* Add spacing between images on mobile */
+            }
+            .image .text-overlay{
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="title-container">
+        <h1 class="title">MULTIMAGNET</h1>
+    </div>
+    <div class="container">
+        <div class="image">
+            <a href="https://therealsongmagnet.vercel.app/" target="_blank">
+            <img src="song magnet.png" alt="Image 1">
+        </a>
+        <div class="about-link-1">
+            <a href="songmagnet.html" target="_blank">About Song Magnet</a>
+        </div>
+        </div>
+
+        <div class="image">
+            <a href="https://therealshowmagnet.vercel.app/" target="_blank">
+            <img src="show magnet.png" alt="Image 2">
+        </a>
+        <div class="about-link-2">
+            <a href="showmagnet.html" target="_blank">About Show Magnet</a>
+        </div>
+        </div>
+        <div class="image">
+            <a href="https://therealfilmmagnet.vercel.app/" target="_blank">
+            <img src="film magnet.png" alt="Image 3">
+        </a>
+        <div class="about-link-3" >
+            <a href="filmmagnet.html" target="_blank">About Film Magnet</a>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
